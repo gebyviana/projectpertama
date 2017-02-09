@@ -9,11 +9,13 @@
     </head>
 <body>
     <div class="page-header">
+		<a href="{% url 'blog:post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
         <center><h1><a href="/">Tutorial Memasak by Gebyviana</a></h1></center>
+		<a href="/logout/" class="taskbar">Logout</a>
     </div>
     <div class="content container">
         <div class="row">
-            <div class="col-md-8">
+            <div class>
             {% block content %}
             {% endblock %}
             </div>
